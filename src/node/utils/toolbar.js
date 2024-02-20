@@ -258,10 +258,10 @@ module.exports = {
        * sufficient to visit a single read only pad to cause the disappearence
        * of the star button from all the pads.
        */
-      if ((buttons[0].indexOf('savedrevision') === -1) &&
-          (whichMenu === 'right') && (page === 'pad')) {
-        buttons[0].push('savedrevision');
-      }
+      // if ((buttons[0].indexOf('savedrevision') === -1) &&
+      //     (whichMenu === 'right') && (page === 'pad')) {
+      //   buttons[0].push('savedrevision');
+      // }
     }
 
     const groups = _.map(buttons, (group) => ButtonsGroup.fromArray(group).render());
